@@ -115,7 +115,7 @@ footer {
 .skills-grid {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 /* ===== 平板及以上 ===== */
@@ -156,3 +156,4 @@ footer {
         gap: 20px;
     }
     
+
