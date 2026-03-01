@@ -1,0 +1,110 @@
+
+        /* 2. 表单容器 */
+        .contact-container {
+            width: 90%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.2); /* 半透明背景增加层次感 */
+            padding: 40px;
+            border-radius: 24px;
+            backdrop-filter: blur(10px); /* 磨砂玻璃效果 */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 3. 表单组（标签+输入框） */
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        /* 标签样式 */
+        label {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #334155;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* 输入框通用样式 */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 12px; /* 圆角 */
+            background-color: white;
+            font-size: 16px;
+            color: #333;
+            outline: none;
+            box-sizing: border-box; /* 确保 padding 不撑开宽度 */
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+        }
+
+        /* 占位符颜色 */
+        ::placeholder {
+            color: #94a3b8;
+        }
+
+        /* 输入框聚焦效果 */
+        input:focus, textarea:focus {
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+            /* transform: translateY(-1px); */
+            background-color: #f8fafc; /* 改用背景色微调代替位移 */
+
+        }
+
+        /* 留言框高度 */
+        textarea {
+            height: 150px;
+            resize: vertical; /* 允许用户垂直拉伸 */
+        }
+
+        /* 4. 提交按钮样式 */
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: #2563eb; /* 蓝色 */
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+        }
+
+        .submit-btn:hover {
+            background-color: #1d4ed8;
+            /* transform: translateY(-2px); */
+            background-color: #1d4ed8
+;
+            box-shadow: 0 15px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .advice {
+            font-size: 32px;
+            font-weight: 600;
+            color: #575757;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+       
+        body.dark-mode label {
+           
+            color: #b1b1b1;
+        }
+        body.dark-mode .advice {
+           
+            color: #b7b5b5;
+        }
+       
+        
